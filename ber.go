@@ -232,6 +232,7 @@ func ReadPacket(reader io.Reader) (*Packet, error) {
 
 func DecodeString(data []byte) (ret string) {
 	ret = string(data)
+	return
 }
 
 func DecodeInteger(data []byte) (ret uint64) {
